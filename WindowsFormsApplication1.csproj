@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Kalkulacka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kalkulacka.Designer.cs">
+      <DependentUpon>Kalkulacka.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RadioButton.cs">
@@ -60,6 +66,9 @@
     <Compile Include="Upravenytext.Designer.cs">
       <DependentUpon>Upravenytext.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Kalkulacka.resx">
+      <DependentUpon>Kalkulacka.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
