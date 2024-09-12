@@ -1,0 +1,17 @@
+C:\Users\martin.chyla2\AppData\Local\Temporary Projects\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\martin.chyla2\AppData\Local\Temporary Projects\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\martin.chyla2\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\martin.chyla2\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\martin.chyla2\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\martin.chyla2\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\martin.chyla2\AppData\Local\Temporary Projects\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+Z:\C#\Martin\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+Z:\C#\Martin\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+Z:\C#\Martin\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+Z:\C#\Martin\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+Z:\C#\Martin\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+Z:\C#\Martin\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+Z:\C#\Martin\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+Z:\C#\Martin\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Upravenytext.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.pdb

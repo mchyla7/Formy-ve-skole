@@ -1,0 +1,7 @@
+Z:\C#\Martin\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe
+Z:\C#\Martin\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.pdb
+Z:\C#\Martin\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Form1.resources
+Z:\C#\Martin\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Properties.Resources.resources
+Z:\C#\Martin\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.csproj.GenerateResource.Cache
+Z:\C#\Martin\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.exe
+Z:\C#\Martin\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.pdb
