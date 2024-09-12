@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RadioButton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadioButton.Designer.cs">
+      <DependentUpon>RadioButton.cs</DependentUpon>
+    </Compile>
     <Compile Include="Upravenytext.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RadioButton.resx">
+      <DependentUpon>RadioButton.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Upravenytext.resx">
       <DependentUpon>Upravenytext.cs</DependentUpon>
     </EmbeddedResource>
