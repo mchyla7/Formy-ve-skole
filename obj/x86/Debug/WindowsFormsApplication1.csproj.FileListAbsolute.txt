@@ -22,3 +22,5 @@ C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplicat
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.Upravenytext.resources
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.Kalkulacka.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.KalkulackaLepsi.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.Kalkulacka2.resources
