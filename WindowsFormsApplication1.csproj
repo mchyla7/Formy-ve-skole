@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="zkouseni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zkouseni.Designer.cs">
+      <DependentUpon>zkouseni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hadani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hadani.designer.cs">
+      <DependentUpon>hadani.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kalkulacka.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +90,9 @@
     <Compile Include="VekAVzdelani.Designer.cs">
       <DependentUpon>VekAVzdelani.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="hadani.resx">
+      <DependentUpon>hadani.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kalkulacka.resx">
       <DependentUpon>Kalkulacka.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VekAVzdelani.resx">
       <DependentUpon>VekAVzdelani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zkouseni.resx">
+      <DependentUpon>zkouseni.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
