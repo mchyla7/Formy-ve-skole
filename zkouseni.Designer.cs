@@ -121,7 +121,6 @@
             this.lDolniHranice.Size = new System.Drawing.Size(223, 39);
             this.lDolniHranice.TabIndex = 7;
             this.lDolniHranice.Text = "Dolní Hranice";
-
             // 
             // nudHorniHranice
             // 
@@ -234,6 +233,7 @@
             this.bPal.TabIndex = 12;
             this.bPal.Text = "Pal!";
             this.bPal.UseVisualStyleBackColor = true;
+            this.bPal.Click += new System.EventHandler(this.bPal_Click);
             // 
             // tbVysledek
             // 

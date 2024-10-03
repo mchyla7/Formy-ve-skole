@@ -12,6 +12,9 @@ namespace WindowsFormsApplication1
     public partial class zkouseni : Form
     {
         string znamenko = "";
+        string vysledek = "";
+        int max;
+        int min;
 
         public zkouseni()
         {
@@ -21,22 +24,22 @@ namespace WindowsFormsApplication1
 
         private void rbNasobeni_CheckedChanged(object sender, EventArgs e)
         {
-            string znamenko = "Nasobeni";
+            znamenko = "Nasobeni";
         }
 
         private void rbScitani_CheckedChanged(object sender, EventArgs e)
         {
-            string znamenko = "Scitani";
+            znamenko = "Scitani";
         }
 
         private void rbOdcitani_CheckedChanged(object sender, EventArgs e)
         {
-            string znamenko = "Odcitani";
+            znamenko = "Odcitani";
         }
 
         private void rbVse_CheckedChanged(object sender, EventArgs e)
         {
-            string znamenko = "Vsechno";
+            znamenko = "Vsechno";
         }
 
         private void bStart_Click(object sender, EventArgs e)
@@ -47,22 +50,113 @@ namespace WindowsFormsApplication1
             decimal horniHranice = nudHorniHranice.Value;
             decimal dolniHranice = nudDolniHranice.Value;
 
-            int max = Convert.ToInt32(horniHranice);
-            int min = Convert.ToInt32(dolniHranice);
+            max = Convert.ToInt32(horniHranice);
+            min = Convert.ToInt32(dolniHranice);
 
             Random generator = new Random();
             int cislo1 = generator.Next(min, max);
             int cislo2 = generator.Next(min, max);
+            int randomZnamenko = generator.Next(1, 4);
             lPrvniCislo.Text = cislo1.ToString();
             lDruheCislo.Text = cislo2.ToString();
             if (znamenko == "Nasobeni")
             {
                 lZnamenko.Text = "*";
-                string vysledek = (cislo1 * cislo2).ToString();
+                vysledek = (cislo1 * cislo2).ToString();
+            }
+            else if (znamenko == "Scitani")
+            {
+                lZnamenko.Text = "+";
+                vysledek = (cislo1 + cislo2).ToString();
+            }
+            else if (znamenko == "odcitani")
+            {
+                lZnamenko.Text = "-";
+                vysledek = (cislo1 - cislo2).ToString();
+            }
+            else if (znamenko == "Vsechno")
+            {
+                if (randomZnamenko == 1)
+                {
+                    lZnamenko.Text = "+";
+                    vysledek = (cislo1 + cislo2).ToString();
+                }
+                else if (randomZnamenko == 2)
+                {
+                    lZnamenko.Text = "-";
+                    vysledek = (cislo1 - cislo2).ToString();
+
+                }
+                else if (randomZnamenko == 3)
+                {
+                    lZnamenko.Text = "*";
+                    vysledek = (cislo1 * cislo2).ToString();
+
+                }
+                else if (randomZnamenko == 4)
+                {
+                    lZnamenko.Text = "/";
+                    vysledek = (cislo1 / cislo2).ToString();
+
+                }
             }
 
 
 
+        }
+
+        private void bPal_Click(object sender, EventArgs e)
+        {
+            if (tbVysledek.Text == vysledek)
+            {
+                Random generator = new Random();
+                int cislo1 = generator.Next(min, max);
+                int cislo2 = generator.Next(min, max);
+                int randomZnamenko = generator.Next(1, 4);
+                lPrvniCislo.Text = cislo1.ToString();
+                lDruheCislo.Text = cislo2.ToString();
+                if (znamenko == "Nasobeni")
+                {
+                    lZnamenko.Text = "*";
+                    vysledek = (cislo1 * cislo2).ToString();
+                }
+                else if (znamenko == "Scitani")
+                {
+                    lZnamenko.Text = "+";
+                    vysledek = (cislo1 + cislo2).ToString();
+                }
+                else if (znamenko == "odcitani")
+                {
+                    lZnamenko.Text = "-";
+                    vysledek = (cislo1 - cislo2).ToString();
+                }
+                else if (znamenko == "Vsechno")
+                {
+                    if (randomZnamenko == 1)
+                    {
+                        lZnamenko.Text = "+";
+                        vysledek = (cislo1 + cislo2).ToString();
+                    }
+                    else if (randomZnamenko == 2)
+                    {
+                        lZnamenko.Text = "-";
+                        vysledek = (cislo1 - cislo2).ToString();
+
+                    }
+                    else if (randomZnamenko == 3)
+                    {
+                        lZnamenko.Text = "*";
+                        vysledek = (cislo1 * cislo2).ToString();
+
+                    }
+                    else if (randomZnamenko == 4)
+                    {
+                        lZnamenko.Text = "/";
+                        vysledek = (cislo1 / cislo2).ToString();
+
+                    }
+                }
+            }
         }
     }
 }
