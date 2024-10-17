@@ -5,3 +5,16 @@ Z:\C#\Martin\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.P
 Z:\C#\Martin\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.csproj.GenerateResource.Cache
 Z:\C#\Martin\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.exe
 Z:\C#\Martin\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.pdb
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\bin\Release\WindowsFormsApplication1.exe
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\bin\Release\WindowsFormsApplication1.pdb
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\Programko.hadani.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1.Kalkulacka.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1.KalkulackaLepsi.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1.RadioButton.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1.Upravenytext.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1.Kalkulacka2.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1.zkouseni.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1.exe
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1.pdb

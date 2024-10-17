@@ -12,14 +12,20 @@ namespace WindowsFormsApplication1
     public partial class zkouseni : Form
     {
         string znamenko = "";
-        string vysledek = "";
+        double vysledek = 0;
         int max;
         int min;
+        int count = 1;
+        int pocetPrikladu = 0;
+        int spravne = 0;
+        int spatne = 0;
+        
 
         public zkouseni()
         {
             InitializeComponent();
             pPriklady.Visible = false;
+            pVysledky.Visible = false;
         }
 
         private void rbNasobeni_CheckedChanged(object sender, EventArgs e)
@@ -44,9 +50,14 @@ namespace WindowsFormsApplication1
 
         private void bStart_Click(object sender, EventArgs e)
         {
+            lSpravneSpatne.Text = "";
+            count = 1;
+            spravne = 0;
+            spatne = 0;
+            
             pPriklady.Visible = true;
             pZadavani.Visible = false;
-            decimal pocetPrikladu = nudPocetPrikladu.Value;
+            pocetPrikladu = Convert.ToInt32(nudPocetPrikladu.Value);
             decimal horniHranice = nudHorniHranice.Value;
             decimal dolniHranice = nudDolniHranice.Value;
 
@@ -62,41 +73,41 @@ namespace WindowsFormsApplication1
             if (znamenko == "Nasobeni")
             {
                 lZnamenko.Text = "*";
-                vysledek = (cislo1 * cislo2).ToString();
+                vysledek = (cislo1 * cislo2);
             }
             else if (znamenko == "Scitani")
             {
                 lZnamenko.Text = "+";
-                vysledek = (cislo1 + cislo2).ToString();
+                vysledek = (cislo1 + cislo2);
             }
             else if (znamenko == "odcitani")
             {
                 lZnamenko.Text = "-";
-                vysledek = (cislo1 - cislo2).ToString();
+                vysledek = (cislo1 - cislo2);
             }
             else if (znamenko == "Vsechno")
             {
                 if (randomZnamenko == 1)
                 {
                     lZnamenko.Text = "+";
-                    vysledek = (cislo1 + cislo2).ToString();
+                    vysledek = (cislo1 + cislo2);
                 }
                 else if (randomZnamenko == 2)
                 {
                     lZnamenko.Text = "-";
-                    vysledek = (cislo1 - cislo2).ToString();
+                    vysledek = (cislo1 - cislo2);
 
                 }
                 else if (randomZnamenko == 3)
                 {
                     lZnamenko.Text = "*";
-                    vysledek = (cislo1 * cislo2).ToString();
+                    vysledek = (cislo1 * cislo2);
 
                 }
                 else if (randomZnamenko == 4)
                 {
                     lZnamenko.Text = "/";
-                    vysledek = (cislo1 / cislo2).ToString();
+                    vysledek = (cislo1 / cislo2);
 
                 }
             }
@@ -107,56 +118,105 @@ namespace WindowsFormsApplication1
 
         private void bPal_Click(object sender, EventArgs e)
         {
-            if (tbVysledek.Text == vysledek)
+            bool skip = false;
+            double cislo = 0;
+
+            if (double.TryParse(tbVysledek.Text, out cislo))
             {
-                Random generator = new Random();
-                int cislo1 = generator.Next(min, max);
-                int cislo2 = generator.Next(min, max);
-                int randomZnamenko = generator.Next(1, 4);
-                lPrvniCislo.Text = cislo1.ToString();
-                lDruheCislo.Text = cislo2.ToString();
-                if (znamenko == "Nasobeni")
+                if (cislo == vysledek)
+                    //if (double.Parse(vysledek) === nudVysledek)
                 {
-                    lZnamenko.Text = "*";
-                    vysledek = (cislo1 * cislo2).ToString();
+                    spravne = spravne + 1;
+                    lSpravneSpatne.Text = "Spravně";
+                    skip = true;
+                    tbVysledek.Clear();
                 }
-                else if (znamenko == "Scitani")
+                else
                 {
-                    lZnamenko.Text = "+";
-                    vysledek = (cislo1 + cislo2).ToString();
+                    spatne = spatne + 1;
+                    lSpravneSpatne.Text = "Špatně";
+                    skip = true;
+                    tbVysledek.Clear();
                 }
-                else if (znamenko == "odcitani")
+                
+                if (count == pocetPrikladu)
                 {
-                    lZnamenko.Text = "-";
-                    vysledek = (cislo1 - cislo2).ToString();
+                    pPriklady.Visible = false;
+                    pVysledky.Visible = true;
+                    lPocetDobre.Text = "Počet dobře je " + spravne;
+                    lPocetSpatne.Text = "Počet špatně je " + spatne;
                 }
-                else if (znamenko == "Vsechno")
+                else 
                 {
-                    if (randomZnamenko == 1)
-                    {
-                        lZnamenko.Text = "+";
-                        vysledek = (cislo1 + cislo2).ToString();
-                    }
-                    else if (randomZnamenko == 2)
-                    {
-                        lZnamenko.Text = "-";
-                        vysledek = (cislo1 - cislo2).ToString();
 
-                    }
-                    else if (randomZnamenko == 3)
+                    if (skip == true)
                     {
-                        lZnamenko.Text = "*";
-                        vysledek = (cislo1 * cislo2).ToString();
+                        skip = false;
 
-                    }
-                    else if (randomZnamenko == 4)
-                    {
-                        lZnamenko.Text = "/";
-                        vysledek = (cislo1 / cislo2).ToString();
+                        Random generator = new Random();
+                        int cislo1 = generator.Next(min, max);
+                        int cislo2 = generator.Next(min, max);
+                        int randomZnamenko = generator.Next(1, 4);
+                        lPrvniCislo.Text = cislo1.ToString();
+                        lDruheCislo.Text = cislo2.ToString();
+                        if (znamenko == "Nasobeni")
+                        {
+                            lZnamenko.Text = "*";
+                            vysledek = (cislo1 * cislo2);
+                        }
+                        else if (znamenko == "Scitani")
+                        {
+                            lZnamenko.Text = "+";
+                            vysledek = (cislo1 + cislo2);
+                        }
+                        else if (znamenko == "odcitani")
+                        {
+                            lZnamenko.Text = "-";
+                            vysledek = (cislo1 - cislo2);
+                        }
+                        else if (znamenko == "Vsechno")
+                        {
+                            if (randomZnamenko == 1)
+                            {
+                                lZnamenko.Text = "+";
+                                vysledek = (cislo1 + cislo2);
+                            }
+                            else if (randomZnamenko == 2)
+                            {
+                                lZnamenko.Text = "-";
+                                vysledek = (cislo1 - cislo2);
 
+                            }
+                            else if (randomZnamenko == 3)
+                            {
+                                lZnamenko.Text = "*";
+                                vysledek = (cislo1 * cislo2);
+
+                            }
+                            else if (randomZnamenko == 4)
+                            {
+                                lZnamenko.Text = "/";
+                                vysledek = (cislo1 / cislo2);
+
+                            }
+
+                        }
                     }
+                    count++;
                 }
             }
         }
+
+        private void bLetsGoBack_Click(object sender, EventArgs e)
+        {
+            pVysledky.Visible = false;
+            pZadavani.Visible = true;
+        }
+
+        private void bExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        
     }
 }

@@ -48,13 +48,19 @@
             this.lDruheCislo = new System.Windows.Forms.Label();
             this.lZnamenko = new System.Windows.Forms.Label();
             this.lPrvniCislo = new System.Windows.Forms.Label();
-            this.sSpravneSpatne = new System.Windows.Forms.Label();
+            this.lSpravneSpatne = new System.Windows.Forms.Label();
+            this.pVysledky = new System.Windows.Forms.Panel();
+            this.bExit = new System.Windows.Forms.Button();
+            this.bLetsGoBack = new System.Windows.Forms.Button();
+            this.lPocetDobre = new System.Windows.Forms.Label();
+            this.lPocetSpatne = new System.Windows.Forms.Label();
             this.pZadavani.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPocetPrikladu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDolniHranice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudHorniHranice)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.pPriklady.SuspendLayout();
+            this.pVysledky.SuspendLayout();
             this.SuspendLayout();
             // 
             // pZadavani
@@ -86,14 +92,11 @@
             // nudPocetPrikladu
             // 
             this.nudPocetPrikladu.Location = new System.Drawing.Point(505, 266);
-            this.nudPocetPrikladu.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
+            this.nudPocetPrikladu.Maximum = new decimal(new int[] { 10000, 0, 0, 0 });
             this.nudPocetPrikladu.Name = "nudPocetPrikladu";
             this.nudPocetPrikladu.Size = new System.Drawing.Size(136, 20);
             this.nudPocetPrikladu.TabIndex = 10;
+            this.nudPocetPrikladu.Value = new decimal(new int[] { 5, 0, 0, 0 });
             // 
             // lPocetPrikaldu
             // 
@@ -128,6 +131,7 @@
             this.nudHorniHranice.Name = "nudHorniHranice";
             this.nudHorniHranice.Size = new System.Drawing.Size(136, 20);
             this.nudHorniHranice.TabIndex = 6;
+            this.nudHorniHranice.Value = new decimal(new int[] { 10, 0, 0, 0 });
             // 
             // lHorniHranice
             // 
@@ -208,10 +212,10 @@
             this.pPriklady.Controls.Add(this.lDruheCislo);
             this.pPriklady.Controls.Add(this.lZnamenko);
             this.pPriklady.Controls.Add(this.lPrvniCislo);
-            this.pPriklady.Controls.Add(this.sSpravneSpatne);
-            this.pPriklady.Location = new System.Drawing.Point(717, 30);
+            this.pPriklady.Controls.Add(this.lSpravneSpatne);
+            this.pPriklady.Location = new System.Drawing.Point(566, 12);
             this.pPriklady.Name = "pPriklady";
-            this.pPriklady.Size = new System.Drawing.Size(667, 386);
+            this.pPriklady.Size = new System.Drawing.Size(610, 388);
             this.pPriklady.TabIndex = 1;
             // 
             // lRovnase
@@ -272,22 +276,76 @@
             this.lPrvniCislo.TabIndex = 1;
             this.lPrvniCislo.Text = "label1";
             // 
-            // sSpravneSpatne
+            // lSpravneSpatne
             // 
-            this.sSpravneSpatne.AutoSize = true;
-            this.sSpravneSpatne.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.sSpravneSpatne.Location = new System.Drawing.Point(54, 47);
-            this.sSpravneSpatne.Name = "sSpravneSpatne";
-            this.sSpravneSpatne.Size = new System.Drawing.Size(64, 25);
-            this.sSpravneSpatne.TabIndex = 0;
-            this.sSpravneSpatne.Text = "label1";
+            this.lSpravneSpatne.AutoSize = true;
+            this.lSpravneSpatne.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lSpravneSpatne.Location = new System.Drawing.Point(56, 38);
+            this.lSpravneSpatne.Name = "lSpravneSpatne";
+            this.lSpravneSpatne.Size = new System.Drawing.Size(64, 25);
+            this.lSpravneSpatne.TabIndex = 0;
+            this.lSpravneSpatne.Text = "label1";
+            // 
+            // pVysledky
+            // 
+            this.pVysledky.Controls.Add(this.bExit);
+            this.pVysledky.Controls.Add(this.bLetsGoBack);
+            this.pVysledky.Controls.Add(this.lPocetDobre);
+            this.pVysledky.Controls.Add(this.lPocetSpatne);
+            this.pVysledky.Location = new System.Drawing.Point(236, -1);
+            this.pVysledky.Name = "pVysledky";
+            this.pVysledky.Size = new System.Drawing.Size(636, 401);
+            this.pVysledky.TabIndex = 2;
+            // 
+            // bExit
+            // 
+            this.bExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.bExit.Location = new System.Drawing.Point(33, 323);
+            this.bExit.Name = "bExit";
+            this.bExit.Size = new System.Drawing.Size(107, 53);
+            this.bExit.TabIndex = 13;
+            this.bExit.Text = "Exit";
+            this.bExit.UseVisualStyleBackColor = true;
+            this.bExit.Click += new System.EventHandler(this.bExit_Click);
+            // 
+            // bLetsGoBack
+            // 
+            this.bLetsGoBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.bLetsGoBack.Location = new System.Drawing.Point(158, 178);
+            this.bLetsGoBack.Name = "bLetsGoBack";
+            this.bLetsGoBack.Size = new System.Drawing.Size(449, 198);
+            this.bLetsGoBack.TabIndex = 12;
+            this.bLetsGoBack.Text = "Let\'s go back!";
+            this.bLetsGoBack.UseVisualStyleBackColor = true;
+            this.bLetsGoBack.Click += new System.EventHandler(this.bLetsGoBack_Click);
+            // 
+            // lPocetDobre
+            // 
+            this.lPocetDobre.AutoSize = true;
+            this.lPocetDobre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lPocetDobre.Location = new System.Drawing.Point(76, 68);
+            this.lPocetDobre.Name = "lPocetDobre";
+            this.lPocetDobre.Size = new System.Drawing.Size(64, 25);
+            this.lPocetDobre.TabIndex = 1;
+            this.lPocetDobre.Text = "label1";
+            // 
+            // lPocetSpatne
+            // 
+            this.lPocetSpatne.AutoSize = true;
+            this.lPocetSpatne.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lPocetSpatne.Location = new System.Drawing.Point(76, 134);
+            this.lPocetSpatne.Name = "lPocetSpatne";
+            this.lPocetSpatne.Size = new System.Drawing.Size(64, 25);
+            this.lPocetSpatne.TabIndex = 0;
+            this.lPocetSpatne.Text = "label1";
             // 
             // zkouseni
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1327, 432);
+            this.ClientSize = new System.Drawing.Size(1199, 432);
             this.Controls.Add(this.pPriklady);
+            this.Controls.Add(this.pVysledky);
             this.Controls.Add(this.pZadavani);
             this.Name = "zkouseni";
             this.Text = "Form1";
@@ -300,8 +358,9 @@
             this.groupBox1.PerformLayout();
             this.pPriklady.ResumeLayout(false);
             this.pPriklady.PerformLayout();
+            this.pVysledky.ResumeLayout(false);
+            this.pVysledky.PerformLayout();
             this.ResumeLayout(false);
-
         }
 
         #endregion
@@ -323,9 +382,14 @@
         private System.Windows.Forms.Label lDruheCislo;
         private System.Windows.Forms.Label lZnamenko;
         private System.Windows.Forms.Label lPrvniCislo;
-        private System.Windows.Forms.Label sSpravneSpatne;
+        private System.Windows.Forms.Label lSpravneSpatne;
         private System.Windows.Forms.Label lRovnase;
         private System.Windows.Forms.Button bPal;
         private System.Windows.Forms.TextBox tbVysledek;
+        private System.Windows.Forms.Panel pVysledky;
+        private System.Windows.Forms.Label lPocetDobre;
+        private System.Windows.Forms.Label lPocetSpatne;
+        private System.Windows.Forms.Button bExit;
+        private System.Windows.Forms.Button bLetsGoBack;
     }
 }
