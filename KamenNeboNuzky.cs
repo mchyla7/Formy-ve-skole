@@ -15,9 +15,9 @@ namespace WindowsFormsApplication1
         double PocetVyherJa;
         double PocetVyherPC;
         bool stejneOtaznik = false;
-        string VyberUzivatele;
         string KamenNuzkyPapir;
         string CoToJe;
+        Random generator = new Random();
 
         public KamenNeboNuzky()
         {
@@ -26,8 +26,7 @@ namespace WindowsFormsApplication1
 
         private void KamenNeboNuzky_Load(object sender, EventArgs e)
         {
-            Random generator = new Random();
-            int KamenNuzkyPapir = generator.Next(1, 3);
+            int KamenNuzkyPapir = generator.Next(1, 4);
             if (KamenNuzkyPapir == 1)
             {
                 CoToJe = "Kamen";
@@ -36,36 +35,111 @@ namespace WindowsFormsApplication1
             {
                 CoToJe = "Nuzky";
             }
-            else
+            else if (KamenNuzkyPapir == 3)
             {
-                CoToJe = "Kamen";
+                CoToJe = "Papir";
             }
-        }
-
-        public static void algoritmus
-        {
-            
         }
 
         private void pbKamen_Click(object sender, EventArgs e)
         {
-            VyberUzivatele = "Kamen";
             if (CoToJe == "Kamen")
             {
-                if (VyberUzivatele == KamenNuzkyPapir)
-                {
-                    lKdoVyhral.Text = "Remíza";
-                }
-
-
+                lKdoVyhral.Text = "Remíza";
+            }
+            else if (CoToJe == "Nuzky")
+            {
+                lKdoVyhral.Text = "Vyhrál jste";
+                PocetVyherJa = PocetVyherJa + 1;
+                lPocetVyherJA.Text = PocetVyherJa.ToString();
+            }
+            else if (CoToJe == "Papir")
+            {
+                lKdoVyhral.Text = "Prohrál jste";
+                PocetVyherPC = PocetVyherPC + 1;
+                lPocetVyherPC.Text = PocetVyherPC.ToString();
+            }
+            int KamenNuzkyPapir = generator.Next(1, 4);
+            if (KamenNuzkyPapir == 1)
+            {
+                CoToJe = "Kamen";
+            }
+            else if (KamenNuzkyPapir == 2)
+            {
+                CoToJe = "Nuzky";
+            }
+            else if (KamenNuzkyPapir == 3)
+            {
+                CoToJe = "Papir";
             }
             
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pbNuzky_Click(object sender, EventArgs e)
         {
-        
+            if (CoToJe == "Kamen")
+            {
+                lKdoVyhral.Text = "Prohrál jste";
+                PocetVyherPC = PocetVyherPC + 1;
+                lPocetVyherPC.Text = PocetVyherPC.ToString();
+            }
+            else if (CoToJe == "Nuzky")
+            {
+                lKdoVyhral.Text = "Remíza";
+            }
+            else if (CoToJe == "Papir")
+            {
+                lKdoVyhral.Text = "Vyhrál jste";
+                PocetVyherJa = PocetVyherJa + 1;
+                lPocetVyherJA.Text = PocetVyherJa.ToString();
+            }
+            int KamenNuzkyPapir = generator.Next(1, 4);
+            if (KamenNuzkyPapir == 1)
+            {
+                CoToJe = "Kamen";
+            }
+            else if (KamenNuzkyPapir == 2)
+            {
+                CoToJe = "Nuzky";
+            }
+            else if (KamenNuzkyPapir == 3)
+            {
+                CoToJe = "Papir";
+            }
+        }
+
+        private void pbPapir_Click(object sender, EventArgs e)
+        {
+            if (CoToJe == "Kamen")
+            {
+                lKdoVyhral.Text = "Vyhrál jste";
+                PocetVyherJa = PocetVyherJa + 1;
+                lPocetVyherJA.Text = PocetVyherJa.ToString();
+            }
+            else if (CoToJe == "Nuzky")
+            {
+                lKdoVyhral.Text = "Prohrál jste";
+                PocetVyherPC = PocetVyherPC + 1;
+                lPocetVyherPC.Text = PocetVyherPC.ToString();
+            }
+            else if (CoToJe == "Papir")
+            {
+                lKdoVyhral.Text = "Remíza";
+            }
+            int KamenNuzkyPapir = generator.Next(1, 4);
+            if (KamenNuzkyPapir == 1)
+            {
+                CoToJe = "Kamen";
+            }
+            else if (KamenNuzkyPapir == 2)
+            {
+                CoToJe = "Nuzky";
+            }
+            else if (KamenNuzkyPapir == 3)
+            {
+                CoToJe = "Papir";
+            }
         }
     }
 }

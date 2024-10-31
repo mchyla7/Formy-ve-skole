@@ -96,6 +96,7 @@
             this.pbNuzky.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbNuzky.TabIndex = 4;
             this.pbNuzky.TabStop = false;
+            this.pbNuzky.Click += new System.EventHandler(this.pbNuzky_Click);
             // 
             // pbPapir
             // 
@@ -106,6 +107,7 @@
             this.pbPapir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPapir.TabIndex = 5;
             this.pbPapir.TabStop = false;
+            this.pbPapir.Click += new System.EventHandler(this.pbPapir_Click);
             // 
             // pictureBox1
             // 
@@ -114,7 +116,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(100, 50);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label2
             // 
