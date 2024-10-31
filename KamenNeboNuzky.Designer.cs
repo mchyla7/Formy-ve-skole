@@ -35,15 +35,19 @@
             this.pbKamen = new System.Windows.Forms.PictureBox();
             this.pbNuzky = new System.Windows.Forms.PictureBox();
             this.pbPapir = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbVysledekKamen = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lPocetVyherPC = new System.Windows.Forms.Label();
             this.lPocetVyherJA = new System.Windows.Forms.Label();
             this.lKdoVyhral = new System.Windows.Forms.Label();
+            this.pbVysledekNuzky = new System.Windows.Forms.PictureBox();
+            this.pbVysledekPapir = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbKamen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNuzky)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPapir)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVysledekKamen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVysledekNuzky)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVysledekPapir)).BeginInit();
             this.SuspendLayout();
             // 
             // lJá
@@ -75,6 +79,7 @@
             this.bNovaHra.TabIndex = 2;
             this.bNovaHra.Text = "Nová hra";
             this.bNovaHra.UseVisualStyleBackColor = true;
+            this.bNovaHra.Click += new System.EventHandler(this.bNovaHra_Click);
             // 
             // pbKamen
             // 
@@ -109,13 +114,15 @@
             this.pbPapir.TabStop = false;
             this.pbPapir.Click += new System.EventHandler(this.pbPapir_Click);
             // 
-            // pictureBox1
+            // pbVysledekKamen
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(336, 157);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.pbVysledekKamen.Image = ((System.Drawing.Image)(resources.GetObject("pbVysledekKamen.Image")));
+            this.pbVysledekKamen.Location = new System.Drawing.Point(222, 111);
+            this.pbVysledekKamen.Name = "pbVysledekKamen";
+            this.pbVysledekKamen.Size = new System.Drawing.Size(311, 153);
+            this.pbVysledekKamen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbVysledekKamen.TabIndex = 9;
+            this.pbVysledekKamen.TabStop = false;
             // 
             // label2
             // 
@@ -156,16 +163,38 @@
             this.lKdoVyhral.TabIndex = 13;
             this.lKdoVyhral.Text = "Vysledek";
             // 
+            // pbVysledekNuzky
+            // 
+            this.pbVysledekNuzky.Image = ((System.Drawing.Image)(resources.GetObject("pbVysledekNuzky.Image")));
+            this.pbVysledekNuzky.Location = new System.Drawing.Point(275, 111);
+            this.pbVysledekNuzky.Name = "pbVysledekNuzky";
+            this.pbVysledekNuzky.Size = new System.Drawing.Size(311, 153);
+            this.pbVysledekNuzky.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbVysledekNuzky.TabIndex = 14;
+            this.pbVysledekNuzky.TabStop = false;
+            // 
+            // pbVysledekPapir
+            // 
+            this.pbVysledekPapir.Image = ((System.Drawing.Image)(resources.GetObject("pbVysledekPapir.Image")));
+            this.pbVysledekPapir.Location = new System.Drawing.Point(247, 111);
+            this.pbVysledekPapir.Name = "pbVysledekPapir";
+            this.pbVysledekPapir.Size = new System.Drawing.Size(311, 153);
+            this.pbVysledekPapir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbVysledekPapir.TabIndex = 15;
+            this.pbVysledekPapir.TabStop = false;
+            // 
             // KamenNeboNuzky
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(820, 548);
+            this.Controls.Add(this.pbVysledekPapir);
+            this.Controls.Add(this.pbVysledekNuzky);
             this.Controls.Add(this.lKdoVyhral);
             this.Controls.Add(this.lPocetVyherJA);
             this.Controls.Add(this.lPocetVyherPC);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbVysledekKamen);
             this.Controls.Add(this.pbPapir);
             this.Controls.Add(this.pbNuzky);
             this.Controls.Add(this.pbKamen);
@@ -178,7 +207,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbKamen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNuzky)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPapir)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVysledekKamen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVysledekNuzky)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVysledekPapir)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,10 +223,12 @@
         private System.Windows.Forms.PictureBox pbKamen;
         private System.Windows.Forms.PictureBox pbNuzky;
         private System.Windows.Forms.PictureBox pbPapir;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbVysledekKamen;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lPocetVyherPC;
         private System.Windows.Forms.Label lPocetVyherJA;
         private System.Windows.Forms.Label lKdoVyhral;
+        private System.Windows.Forms.PictureBox pbVysledekNuzky;
+        private System.Windows.Forms.PictureBox pbVysledekPapir;
     }
 }

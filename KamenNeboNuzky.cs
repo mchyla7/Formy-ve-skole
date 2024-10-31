@@ -19,9 +19,13 @@ namespace WindowsFormsApplication1
         string CoToJe;
         Random generator = new Random();
 
+
         public KamenNeboNuzky()
         {
             InitializeComponent();
+            pbVysledekNuzky.Visible = false;
+            pbVysledekKamen.Visible = false;
+            pbVysledekPapir.Visible = false;
         }
 
         private void KamenNeboNuzky_Load(object sender, EventArgs e)
@@ -46,18 +50,28 @@ namespace WindowsFormsApplication1
             if (CoToJe == "Kamen")
             {
                 lKdoVyhral.Text = "Remíza";
+                pbVysledekNuzky.Visible = false;
+                pbVysledekKamen.Visible = true;
+                pbVysledekPapir.Visible = false;
             }
             else if (CoToJe == "Nuzky")
             {
                 lKdoVyhral.Text = "Vyhrál jste";
                 PocetVyherJa = PocetVyherJa + 1;
                 lPocetVyherJA.Text = PocetVyherJa.ToString();
+                pbVysledekNuzky.Visible = true;
+                pbVysledekKamen.Visible = false;
+                pbVysledekPapir.Visible = false;
+
             }
             else if (CoToJe == "Papir")
             {
                 lKdoVyhral.Text = "Prohrál jste";
                 PocetVyherPC = PocetVyherPC + 1;
                 lPocetVyherPC.Text = PocetVyherPC.ToString();
+                pbVysledekNuzky.Visible = false;
+                pbVysledekKamen.Visible = false;
+                pbVysledekPapir.Visible = true;
             }
             int KamenNuzkyPapir = generator.Next(1, 4);
             if (KamenNuzkyPapir == 1)
@@ -83,16 +97,25 @@ namespace WindowsFormsApplication1
                 lKdoVyhral.Text = "Prohrál jste";
                 PocetVyherPC = PocetVyherPC + 1;
                 lPocetVyherPC.Text = PocetVyherPC.ToString();
+                pbVysledekNuzky.Visible = false;
+                pbVysledekKamen.Visible = true;
+                pbVysledekPapir.Visible = false;
             }
             else if (CoToJe == "Nuzky")
             {
                 lKdoVyhral.Text = "Remíza";
+                pbVysledekNuzky.Visible = true;
+                pbVysledekKamen.Visible = false;
+                pbVysledekPapir.Visible = false;
             }
             else if (CoToJe == "Papir")
             {
                 lKdoVyhral.Text = "Vyhrál jste";
                 PocetVyherJa = PocetVyherJa + 1;
                 lPocetVyherJA.Text = PocetVyherJa.ToString();
+                pbVysledekNuzky.Visible = false;
+                pbVysledekKamen.Visible = false;
+                pbVysledekPapir.Visible = true;
             }
             int KamenNuzkyPapir = generator.Next(1, 4);
             if (KamenNuzkyPapir == 1)
@@ -116,16 +139,25 @@ namespace WindowsFormsApplication1
                 lKdoVyhral.Text = "Vyhrál jste";
                 PocetVyherJa = PocetVyherJa + 1;
                 lPocetVyherJA.Text = PocetVyherJa.ToString();
+                pbVysledekNuzky.Visible = false;
+                pbVysledekKamen.Visible = true;
+                pbVysledekPapir.Visible = false;
             }
             else if (CoToJe == "Nuzky")
             {
                 lKdoVyhral.Text = "Prohrál jste";
                 PocetVyherPC = PocetVyherPC + 1;
                 lPocetVyherPC.Text = PocetVyherPC.ToString();
+                pbVysledekNuzky.Visible = true;
+                pbVysledekKamen.Visible = false;
+                pbVysledekPapir.Visible = false;
             }
             else if (CoToJe == "Papir")
             {
                 lKdoVyhral.Text = "Remíza";
+                pbVysledekNuzky.Visible = false;
+                pbVysledekKamen.Visible = false;
+                pbVysledekPapir.Visible = true;
             }
             int KamenNuzkyPapir = generator.Next(1, 4);
             if (KamenNuzkyPapir == 1)
@@ -141,5 +173,14 @@ namespace WindowsFormsApplication1
                 CoToJe = "Papir";
             }
         }
+
+        private void bNovaHra_Click(object sender, EventArgs e)
+        {
+            PocetVyherPC = 0;
+            PocetVyherJa = 0;
+            lPocetVyherJA.Text = PocetVyherJa.ToString();
+            lPocetVyherPC.Text = PocetVyherPC.ToString();
+        }
+
     }
 }
