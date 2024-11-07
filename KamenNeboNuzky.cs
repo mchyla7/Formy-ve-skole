@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class KamenNeboNuzky : Form
+    public partial class KamenNeboNuzkyNeboPapir : Form
     {
 
         double PocetVyherJa;
@@ -18,14 +18,22 @@ namespace WindowsFormsApplication1
         string KamenNuzkyPapir;
         string CoToJe;
         Random generator = new Random();
+        double kamen;
+        double papir;
+        double nuzky;
 
-
-        public KamenNeboNuzky()
+        public KamenNeboNuzkyNeboPapir()
         {
             InitializeComponent();
             pbVysledekNuzky.Visible = false;
             pbVysledekKamen.Visible = false;
             pbVysledekPapir.Visible = false;
+            pbKamenBlur.Visible = false;
+            pbNuzkyBlur.Visible = false;
+            pbPapirBlur.Visible = false;
+            pbBackgroundKamen.Visible = false;
+            pbBackgroundNuzky.Visible = false;
+            pbBackgroundPapir.Visible = false;
         }
 
         private void KamenNeboNuzky_Load(object sender, EventArgs e)
@@ -47,6 +55,18 @@ namespace WindowsFormsApplication1
 
         private void pbKamen_Click(object sender, EventArgs e)
         {
+            pbPozadi.Image = pbBackgroundKamen.Image;
+            pbKamenBlur.Visible = true;
+            pbNuzkyBlur.Visible = false;
+            pbPapirBlur.Visible = false;
+            kamen++;
+            papir = 0;
+            nuzky = 0;
+            if (kamen > 5)
+            {
+                    CoToJe = "Papir"; 
+            }
+
             if (CoToJe == "Kamen")
             {
                 lKdoVyhral.Text = "Remíza";
@@ -92,6 +112,17 @@ namespace WindowsFormsApplication1
 
         private void pbNuzky_Click(object sender, EventArgs e)
         {
+            pbPozadi.Image = pbBackgroundNuzky.Image;
+            pbKamenBlur.Visible = false;
+            pbNuzkyBlur.Visible = true;
+            pbPapirBlur.Visible = false;
+            nuzky++;
+            kamen = 0;
+            papir = 0;
+            if (nuzky > 5)
+            {
+                CoToJe = "Kamen";
+            }
             if (CoToJe == "Kamen")
             {
                 lKdoVyhral.Text = "Prohrál jste";
@@ -134,6 +165,17 @@ namespace WindowsFormsApplication1
 
         private void pbPapir_Click(object sender, EventArgs e)
         {
+            pbPozadi.Image = pbBackgroundPapir.Image;
+            pbKamenBlur.Visible = false;
+            pbNuzkyBlur.Visible = false;
+            pbPapirBlur.Visible = true;
+            papir++;
+            nuzky = 0;
+            kamen = 0;
+            if (papir > 5)
+            {
+                CoToJe = "Nuzky";
+            }
             if (CoToJe == "Kamen")
             {
                 lKdoVyhral.Text = "Vyhrál jste";
@@ -180,6 +222,12 @@ namespace WindowsFormsApplication1
             PocetVyherJa = 0;
             lPocetVyherJA.Text = PocetVyherJa.ToString();
             lPocetVyherPC.Text = PocetVyherPC.ToString();
+            
+        }
+
+        private void lJá_Click(object sender, EventArgs e)
+        {
+
         }
 
     }

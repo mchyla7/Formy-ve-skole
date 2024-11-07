@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class KamenNeboNuzky
+    partial class KamenNeboNuzkyNeboPapir
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KamenNeboNuzky));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KamenNeboNuzkyNeboPapir));
             this.lJá = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.bNovaHra = new System.Windows.Forms.Button();
@@ -42,29 +42,44 @@
             this.lKdoVyhral = new System.Windows.Forms.Label();
             this.pbVysledekNuzky = new System.Windows.Forms.PictureBox();
             this.pbVysledekPapir = new System.Windows.Forms.PictureBox();
+            this.pbPapirBlur = new System.Windows.Forms.PictureBox();
+            this.pbNuzkyBlur = new System.Windows.Forms.PictureBox();
+            this.pbKamenBlur = new System.Windows.Forms.PictureBox();
+            this.pbPozadi = new System.Windows.Forms.PictureBox();
+            this.pbBackgroundKamen = new System.Windows.Forms.PictureBox();
+            this.pbBackgroundNuzky = new System.Windows.Forms.PictureBox();
+            this.pbBackgroundPapir = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbKamen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNuzky)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPapir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbVysledekKamen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbVysledekNuzky)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbVysledekPapir)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPapirBlur)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNuzkyBlur)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbKamenBlur)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPozadi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBackgroundKamen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBackgroundNuzky)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBackgroundPapir)).BeginInit();
             this.SuspendLayout();
             // 
             // lJá
             // 
             this.lJá.AutoSize = true;
             this.lJá.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F);
-            this.lJá.Location = new System.Drawing.Point(71, 35);
+            this.lJá.Location = new System.Drawing.Point(71, 42);
             this.lJá.Name = "lJá";
             this.lJá.Size = new System.Drawing.Size(45, 32);
             this.lJá.TabIndex = 0;
             this.lJá.Text = "Já";
+            this.lJá.Click += new System.EventHandler(this.lJá_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F);
-            this.label1.Location = new System.Drawing.Point(605, 35);
+            this.label1.Location = new System.Drawing.Point(621, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 32);
             this.label1.TabIndex = 1;
@@ -73,18 +88,19 @@
             // bNovaHra
             // 
             this.bNovaHra.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.bNovaHra.Location = new System.Drawing.Point(26, 423);
+            this.bNovaHra.Location = new System.Drawing.Point(12, 423);
             this.bNovaHra.Name = "bNovaHra";
-            this.bNovaHra.Size = new System.Drawing.Size(149, 56);
+            this.bNovaHra.Size = new System.Drawing.Size(168, 69);
             this.bNovaHra.TabIndex = 2;
-            this.bNovaHra.Text = "Nová hra";
+            this.bNovaHra.Text = "New Game +";
             this.bNovaHra.UseVisualStyleBackColor = true;
             this.bNovaHra.Click += new System.EventHandler(this.bNovaHra_Click);
             // 
             // pbKamen
             // 
+            this.pbKamen.BackColor = System.Drawing.Color.Transparent;
             this.pbKamen.Image = ((System.Drawing.Image)(resources.GetObject("pbKamen.Image")));
-            this.pbKamen.Location = new System.Drawing.Point(223, 353);
+            this.pbKamen.Location = new System.Drawing.Point(213, 353);
             this.pbKamen.Name = "pbKamen";
             this.pbKamen.Size = new System.Drawing.Size(143, 183);
             this.pbKamen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -105,6 +121,7 @@
             // 
             // pbPapir
             // 
+            this.pbPapir.BackColor = System.Drawing.Color.Transparent;
             this.pbPapir.Image = ((System.Drawing.Image)(resources.GetObject("pbPapir.Image")));
             this.pbPapir.Location = new System.Drawing.Point(611, 353);
             this.pbPapir.Name = "pbPapir";
@@ -116,8 +133,9 @@
             // 
             // pbVysledekKamen
             // 
+            this.pbVysledekKamen.BackColor = System.Drawing.Color.Transparent;
             this.pbVysledekKamen.Image = ((System.Drawing.Image)(resources.GetObject("pbVysledekKamen.Image")));
-            this.pbVysledekKamen.Location = new System.Drawing.Point(222, 111);
+            this.pbVysledekKamen.Location = new System.Drawing.Point(247, 111);
             this.pbVysledekKamen.Name = "pbVysledekKamen";
             this.pbVysledekKamen.Size = new System.Drawing.Size(311, 153);
             this.pbVysledekKamen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -137,7 +155,7 @@
             // 
             this.lPocetVyherPC.AutoSize = true;
             this.lPocetVyherPC.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F);
-            this.lPocetVyherPC.Location = new System.Drawing.Point(647, 111);
+            this.lPocetVyherPC.Location = new System.Drawing.Point(663, 111);
             this.lPocetVyherPC.Name = "lPocetVyherPC";
             this.lPocetVyherPC.Size = new System.Drawing.Size(31, 32);
             this.lPocetVyherPC.TabIndex = 11;
@@ -147,7 +165,7 @@
             // 
             this.lPocetVyherJA.AutoSize = true;
             this.lPocetVyherJA.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F);
-            this.lPocetVyherJA.Location = new System.Drawing.Point(85, 111);
+            this.lPocetVyherJA.Location = new System.Drawing.Point(71, 111);
             this.lPocetVyherJA.Name = "lPocetVyherJA";
             this.lPocetVyherJA.Size = new System.Drawing.Size(31, 32);
             this.lPocetVyherJA.TabIndex = 12;
@@ -161,12 +179,13 @@
             this.lKdoVyhral.Name = "lKdoVyhral";
             this.lKdoVyhral.Size = new System.Drawing.Size(156, 39);
             this.lKdoVyhral.TabIndex = 13;
-            this.lKdoVyhral.Text = "Vysledek";
+            this.lKdoVyhral.Text = "Výsledek";
             // 
             // pbVysledekNuzky
             // 
+            this.pbVysledekNuzky.BackColor = System.Drawing.Color.Transparent;
             this.pbVysledekNuzky.Image = ((System.Drawing.Image)(resources.GetObject("pbVysledekNuzky.Image")));
-            this.pbVysledekNuzky.Location = new System.Drawing.Point(275, 111);
+            this.pbVysledekNuzky.Location = new System.Drawing.Point(247, 111);
             this.pbVysledekNuzky.Name = "pbVysledekNuzky";
             this.pbVysledekNuzky.Size = new System.Drawing.Size(311, 153);
             this.pbVysledekNuzky.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -175,6 +194,7 @@
             // 
             // pbVysledekPapir
             // 
+            this.pbVysledekPapir.BackColor = System.Drawing.Color.Transparent;
             this.pbVysledekPapir.Image = ((System.Drawing.Image)(resources.GetObject("pbVysledekPapir.Image")));
             this.pbVysledekPapir.Location = new System.Drawing.Point(247, 111);
             this.pbVysledekPapir.Name = "pbVysledekPapir";
@@ -183,11 +203,79 @@
             this.pbVysledekPapir.TabIndex = 15;
             this.pbVysledekPapir.TabStop = false;
             // 
-            // KamenNeboNuzky
+            // pbPapirBlur
+            // 
+            this.pbPapirBlur.Image = ((System.Drawing.Image)(resources.GetObject("pbPapirBlur.Image")));
+            this.pbPapirBlur.Location = new System.Drawing.Point(583, 334);
+            this.pbPapirBlur.Name = "pbPapirBlur";
+            this.pbPapirBlur.Size = new System.Drawing.Size(197, 215);
+            this.pbPapirBlur.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPapirBlur.TabIndex = 16;
+            this.pbPapirBlur.TabStop = false;
+            // 
+            // pbNuzkyBlur
+            // 
+            this.pbNuzkyBlur.Image = ((System.Drawing.Image)(resources.GetObject("pbNuzkyBlur.Image")));
+            this.pbNuzkyBlur.Location = new System.Drawing.Point(389, 334);
+            this.pbNuzkyBlur.Name = "pbNuzkyBlur";
+            this.pbNuzkyBlur.Size = new System.Drawing.Size(197, 215);
+            this.pbNuzkyBlur.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbNuzkyBlur.TabIndex = 17;
+            this.pbNuzkyBlur.TabStop = false;
+            // 
+            // pbKamenBlur
+            // 
+            this.pbKamenBlur.Image = ((System.Drawing.Image)(resources.GetObject("pbKamenBlur.Image")));
+            this.pbKamenBlur.Location = new System.Drawing.Point(186, 334);
+            this.pbKamenBlur.Name = "pbKamenBlur";
+            this.pbKamenBlur.Size = new System.Drawing.Size(197, 215);
+            this.pbKamenBlur.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbKamenBlur.TabIndex = 18;
+            this.pbKamenBlur.TabStop = false;
+            // 
+            // pbPozadi
+            // 
+            this.pbPozadi.Location = new System.Drawing.Point(-3, 0);
+            this.pbPozadi.Name = "pbPozadi";
+            this.pbPozadi.Size = new System.Drawing.Size(827, 585);
+            this.pbPozadi.TabIndex = 19;
+            this.pbPozadi.TabStop = false;
+            // 
+            // pbBackgroundKamen
+            // 
+            this.pbBackgroundKamen.Image = ((System.Drawing.Image)(resources.GetObject("pbBackgroundKamen.Image")));
+            this.pbBackgroundKamen.Location = new System.Drawing.Point(669, 190);
+            this.pbBackgroundKamen.Name = "pbBackgroundKamen";
+            this.pbBackgroundKamen.Size = new System.Drawing.Size(100, 50);
+            this.pbBackgroundKamen.TabIndex = 20;
+            this.pbBackgroundKamen.TabStop = false;
+            // 
+            // pbBackgroundNuzky
+            // 
+            this.pbBackgroundNuzky.Image = ((System.Drawing.Image)(resources.GetObject("pbBackgroundNuzky.Image")));
+            this.pbBackgroundNuzky.Location = new System.Drawing.Point(671, 159);
+            this.pbBackgroundNuzky.Name = "pbBackgroundNuzky";
+            this.pbBackgroundNuzky.Size = new System.Drawing.Size(98, 25);
+            this.pbBackgroundNuzky.TabIndex = 21;
+            this.pbBackgroundNuzky.TabStop = false;
+            // 
+            // pbBackgroundPapir
+            // 
+            this.pbBackgroundPapir.Image = ((System.Drawing.Image)(resources.GetObject("pbBackgroundPapir.Image")));
+            this.pbBackgroundPapir.Location = new System.Drawing.Point(672, 266);
+            this.pbBackgroundPapir.Name = "pbBackgroundPapir";
+            this.pbBackgroundPapir.Size = new System.Drawing.Size(96, 31);
+            this.pbBackgroundPapir.TabIndex = 22;
+            this.pbBackgroundPapir.TabStop = false;
+            // 
+            // KamenNeboNuzkyNeboPapir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(820, 548);
+            this.ClientSize = new System.Drawing.Size(820, 584);
+            this.Controls.Add(this.pbBackgroundPapir);
+            this.Controls.Add(this.pbBackgroundNuzky);
+            this.Controls.Add(this.pbBackgroundKamen);
             this.Controls.Add(this.pbVysledekPapir);
             this.Controls.Add(this.pbVysledekNuzky);
             this.Controls.Add(this.lKdoVyhral);
@@ -201,8 +289,12 @@
             this.Controls.Add(this.bNovaHra);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lJá);
-            this.Name = "KamenNeboNuzky";
-            this.Text = "KamenNeboNuzky";
+            this.Controls.Add(this.pbPapirBlur);
+            this.Controls.Add(this.pbNuzkyBlur);
+            this.Controls.Add(this.pbKamenBlur);
+            this.Controls.Add(this.pbPozadi);
+            this.Name = "KamenNeboNuzkyNeboPapir";
+            this.Text = "Kámen Nůžky Papír";
             this.Load += new System.EventHandler(this.KamenNeboNuzky_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbKamen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNuzky)).EndInit();
@@ -210,6 +302,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbVysledekKamen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbVysledekNuzky)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbVysledekPapir)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPapirBlur)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNuzkyBlur)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbKamenBlur)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPozadi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBackgroundKamen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBackgroundNuzky)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbBackgroundPapir)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,5 +329,12 @@
         private System.Windows.Forms.Label lKdoVyhral;
         private System.Windows.Forms.PictureBox pbVysledekNuzky;
         private System.Windows.Forms.PictureBox pbVysledekPapir;
+        private System.Windows.Forms.PictureBox pbPapirBlur;
+        private System.Windows.Forms.PictureBox pbNuzkyBlur;
+        private System.Windows.Forms.PictureBox pbKamenBlur;
+        private System.Windows.Forms.PictureBox pbPozadi;
+        private System.Windows.Forms.PictureBox pbBackgroundKamen;
+        private System.Windows.Forms.PictureBox pbBackgroundNuzky;
+        private System.Windows.Forms.PictureBox pbBackgroundPapir;
     }
 }
