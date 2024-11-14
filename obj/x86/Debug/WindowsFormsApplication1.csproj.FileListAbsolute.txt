@@ -28,3 +28,4 @@ C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\Programko.hadani.res
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.zkouseni.resources
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.KamenNeboNuzkyNeboPapir.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.PraceSDatumem.resources
