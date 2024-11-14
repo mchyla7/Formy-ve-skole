@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="informaceODnesku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="informaceODnesku.Designer.cs">
+      <DependentUpon>informaceODnesku.cs</DependentUpon>
+    </Compile>
     <Compile Include="KamenNeboNuzky.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </Compile>
     <EmbeddedResource Include="hadani.resx">
       <DependentUpon>hadani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="informaceODnesku.resx">
+      <DependentUpon>informaceODnesku.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kalkulacka.resx">
       <DependentUpon>Kalkulacka.cs</DependentUpon>
