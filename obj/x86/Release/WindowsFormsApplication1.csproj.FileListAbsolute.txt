@@ -18,3 +18,8 @@ C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplic
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1.csproj.GenerateResource.Cache
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1.exe
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1.pdb
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1.hodiny.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1.informaceODnesku.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1.KamenNeboNuzkyNeboPapir.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1.odpocitavej.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1.PraceSDatumem.resources

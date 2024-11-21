@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="hodiny.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hodiny.Designer.cs">
+      <DependentUpon>hodiny.cs</DependentUpon>
+    </Compile>
     <Compile Include="informaceODnesku.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,12 @@
     </Compile>
     <Compile Include="KamenNeboNuzky.Designer.cs">
       <DependentUpon>KamenNeboNuzky.cs</DependentUpon>
+    </Compile>
+    <Compile Include="odpocitavej.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odpocitavej.Designer.cs">
+      <DependentUpon>odpocitavej.cs</DependentUpon>
     </Compile>
     <Compile Include="PraceSDatumem.cs">
       <SubType>Form</SubType>
@@ -108,8 +120,17 @@
     <Compile Include="VekAVzdelani.Designer.cs">
       <DependentUpon>VekAVzdelani.cs</DependentUpon>
     </Compile>
+    <Compile Include="¨Stopky.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="¨Stopky.Designer.cs">
+      <DependentUpon>¨Stopky.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="hadani.resx">
       <DependentUpon>hadani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hodiny.resx">
+      <DependentUpon>hodiny.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="informaceODnesku.resx">
       <DependentUpon>informaceODnesku.cs</DependentUpon>
@@ -122,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KamenNeboNuzky.resx">
       <DependentUpon>KamenNeboNuzky.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odpocitavej.resx">
+      <DependentUpon>odpocitavej.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PraceSDatumem.resx">
       <DependentUpon>PraceSDatumem.cs</DependentUpon>
@@ -146,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="zkouseni.resx">
       <DependentUpon>zkouseni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="¨Stopky.resx">
+      <DependentUpon>¨Stopky.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

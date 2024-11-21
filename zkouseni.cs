@@ -19,6 +19,7 @@ namespace WindowsFormsApplication1
         int pocetPrikladu = 0;
         int spravne = 0;
         int spatne = 0;
+        int s = 0;
         
 
         public zkouseni()
@@ -54,6 +55,8 @@ namespace WindowsFormsApplication1
             count = 1;
             spravne = 0;
             spatne = 0;
+            s = 0;
+            timer1.Interval = 1000;
             
             pPriklady.Visible = true;
             pZadavani.Visible = false;
@@ -145,6 +148,7 @@ namespace WindowsFormsApplication1
                     pVysledky.Visible = true;
                     lPocetDobre.Text = "Počet dobře je " + spravne;
                     lPocetSpatne.Text = "Počet špatně je " + spatne;
+                    timer1.Stop();
                 }
                 else 
                 {
@@ -211,12 +215,20 @@ namespace WindowsFormsApplication1
         {
             pVysledky.Visible = false;
             pZadavani.Visible = true;
+            timer1.Start();
         }
 
         private void bExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-        
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            s++;
+            TimeSpan t = TimeSpan.FromSeconds(s);
+            string vystup = string.Format("{0:D2}h:{1:D2}m:{2:D2}.{3:D2}", t.Hours, t.Minutes, t.Seconds, t.Milliseconds);
+            lTrvaloTiTo.Text = vystup;
+        }
     }
 }

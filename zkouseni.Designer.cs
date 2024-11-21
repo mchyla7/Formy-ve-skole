@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pZadavani = new System.Windows.Forms.Panel();
             this.bStart = new System.Windows.Forms.Button();
             this.nudPocetPrikladu = new System.Windows.Forms.NumericUpDown();
@@ -50,10 +51,12 @@
             this.lPrvniCislo = new System.Windows.Forms.Label();
             this.lSpravneSpatne = new System.Windows.Forms.Label();
             this.pVysledky = new System.Windows.Forms.Panel();
+            this.lTrvaloTiTo = new System.Windows.Forms.Label();
             this.bExit = new System.Windows.Forms.Button();
             this.bLetsGoBack = new System.Windows.Forms.Button();
             this.lPocetDobre = new System.Windows.Forms.Label();
             this.lPocetSpatne = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pZadavani.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPocetPrikladu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDolniHranice)).BeginInit();
@@ -92,11 +95,19 @@
             // nudPocetPrikladu
             // 
             this.nudPocetPrikladu.Location = new System.Drawing.Point(505, 266);
-            this.nudPocetPrikladu.Maximum = new decimal(new int[] { 10000, 0, 0, 0 });
+            this.nudPocetPrikladu.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.nudPocetPrikladu.Name = "nudPocetPrikladu";
             this.nudPocetPrikladu.Size = new System.Drawing.Size(136, 20);
             this.nudPocetPrikladu.TabIndex = 10;
-            this.nudPocetPrikladu.Value = new decimal(new int[] { 5, 0, 0, 0 });
+            this.nudPocetPrikladu.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             // 
             // lPocetPrikaldu
             // 
@@ -111,6 +122,11 @@
             // nudDolniHranice
             // 
             this.nudDolniHranice.Location = new System.Drawing.Point(470, 141);
+            this.nudDolniHranice.Minimum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            -2147483648});
             this.nudDolniHranice.Name = "nudDolniHranice";
             this.nudDolniHranice.Size = new System.Drawing.Size(136, 20);
             this.nudDolniHranice.TabIndex = 8;
@@ -128,10 +144,19 @@
             // nudHorniHranice
             // 
             this.nudHorniHranice.Location = new System.Drawing.Point(470, 33);
+            this.nudHorniHranice.Minimum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            -2147483648});
             this.nudHorniHranice.Name = "nudHorniHranice";
             this.nudHorniHranice.Size = new System.Drawing.Size(136, 20);
             this.nudHorniHranice.TabIndex = 6;
-            this.nudHorniHranice.Value = new decimal(new int[] { 10, 0, 0, 0 });
+            this.nudHorniHranice.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             // 
             // lHorniHranice
             // 
@@ -288,6 +313,7 @@
             // 
             // pVysledky
             // 
+            this.pVysledky.Controls.Add(this.lTrvaloTiTo);
             this.pVysledky.Controls.Add(this.bExit);
             this.pVysledky.Controls.Add(this.bLetsGoBack);
             this.pVysledky.Controls.Add(this.lPocetDobre);
@@ -296,6 +322,16 @@
             this.pVysledky.Name = "pVysledky";
             this.pVysledky.Size = new System.Drawing.Size(636, 401);
             this.pVysledky.TabIndex = 2;
+            // 
+            // lTrvaloTiTo
+            // 
+            this.lTrvaloTiTo.AutoSize = true;
+            this.lTrvaloTiTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lTrvaloTiTo.Location = new System.Drawing.Point(76, 28);
+            this.lTrvaloTiTo.Name = "lTrvaloTiTo";
+            this.lTrvaloTiTo.Size = new System.Drawing.Size(64, 25);
+            this.lTrvaloTiTo.TabIndex = 14;
+            this.lTrvaloTiTo.Text = "label1";
             // 
             // bExit
             // 
@@ -339,6 +375,11 @@
             this.lPocetSpatne.TabIndex = 0;
             this.lPocetSpatne.Text = "label1";
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // zkouseni
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -361,6 +402,7 @@
             this.pVysledky.ResumeLayout(false);
             this.pVysledky.PerformLayout();
             this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -391,5 +433,7 @@
         private System.Windows.Forms.Label lPocetSpatne;
         private System.Windows.Forms.Button bExit;
         private System.Windows.Forms.Button bLetsGoBack;
+        private System.Windows.Forms.Label lTrvaloTiTo;
+        private System.Windows.Forms.Timer timer1;
     }
 }
