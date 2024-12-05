@@ -14,6 +14,6 @@ namespace WindowsFormsApplication1
         public ÜkladaniCisel()
         {
             InitializeComponent();
-        }
+        }    
     }
 }

@@ -39,6 +39,7 @@
             this.rbOddelenoTab = new System.Windows.Forms.RadioButton();
             this.rbOddelenoDvojteckou = new System.Windows.Forms.RadioButton();
             this.lUlozitDoFormatu = new System.Windows.Forms.Label();
+            this.bUlozit = new System.Windows.Forms.Button();
             this.pUlozitDoFormatu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             // 
             this.lZadejCislo.AutoSize = true;
             this.lZadejCislo.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.lZadejCislo.Location = new System.Drawing.Point(42, 65);
+            this.lZadejCislo.Location = new System.Drawing.Point(35, 65);
             this.lZadejCislo.Name = "lZadejCislo";
             this.lZadejCislo.Size = new System.Drawing.Size(199, 39);
             this.lZadejCislo.TabIndex = 0;
@@ -54,7 +55,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(324, 65);
+            this.textBox1.Location = new System.Drawing.Point(279, 65);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 1;
@@ -63,7 +64,7 @@
             // 
             this.lPocetCisel.AutoSize = true;
             this.lPocetCisel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.lPocetCisel.Location = new System.Drawing.Point(569, 65);
+            this.lPocetCisel.Location = new System.Drawing.Point(450, 65);
             this.lPocetCisel.Name = "lPocetCisel";
             this.lPocetCisel.Size = new System.Drawing.Size(200, 39);
             this.lPocetCisel.TabIndex = 2;
@@ -73,7 +74,7 @@
             // 
             this.lPocetCiselReal.AutoSize = true;
             this.lPocetCiselReal.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.lPocetCiselReal.Location = new System.Drawing.Point(775, 65);
+            this.lPocetCiselReal.Location = new System.Drawing.Point(671, 65);
             this.lPocetCiselReal.Name = "lPocetCiselReal";
             this.lPocetCiselReal.Size = new System.Drawing.Size(36, 39);
             this.lPocetCiselReal.TabIndex = 3;
@@ -82,7 +83,7 @@
             // bPridatCislo
             // 
             this.bPridatCislo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.bPridatCislo.Location = new System.Drawing.Point(273, 161);
+            this.bPridatCislo.Location = new System.Drawing.Point(144, 143);
             this.bPridatCislo.Name = "bPridatCislo";
             this.bPridatCislo.Size = new System.Drawing.Size(151, 51);
             this.bPridatCislo.TabIndex = 4;
@@ -92,7 +93,7 @@
             // bVymazatCisla
             // 
             this.bVymazatCisla.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.bVymazatCisla.Location = new System.Drawing.Point(626, 161);
+            this.bVymazatCisla.Location = new System.Drawing.Point(448, 144);
             this.bVymazatCisla.Name = "bVymazatCisla";
             this.bVymazatCisla.Size = new System.Drawing.Size(220, 51);
             this.bVymazatCisla.TabIndex = 5;
@@ -113,7 +114,7 @@
             // 
             this.rbPodSebou.AutoSize = true;
             this.rbPodSebou.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.rbPodSebou.Location = new System.Drawing.Point(20, 103);
+            this.rbPodSebou.Location = new System.Drawing.Point(20, 78);
             this.rbPodSebou.Name = "rbPodSebou";
             this.rbPodSebou.Size = new System.Drawing.Size(103, 24);
             this.rbPodSebou.TabIndex = 2;
@@ -125,7 +126,7 @@
             // 
             this.rbOddelenoTab.AutoSize = true;
             this.rbOddelenoTab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.rbOddelenoTab.Location = new System.Drawing.Point(20, 63);
+            this.rbOddelenoTab.Location = new System.Drawing.Point(20, 48);
             this.rbOddelenoTab.Name = "rbOddelenoTab";
             this.rbOddelenoTab.Size = new System.Drawing.Size(149, 24);
             this.rbOddelenoTab.TabIndex = 1;
@@ -155,11 +156,22 @@
             this.lUlozitDoFormatu.TabIndex = 7;
             this.lUlozitDoFormatu.Text = "Uložit do formatu:";
             // 
+            // bUlozit
+            // 
+            this.bUlozit.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
+            this.bUlozit.Location = new System.Drawing.Point(419, 258);
+            this.bUlozit.Name = "bUlozit";
+            this.bUlozit.Size = new System.Drawing.Size(277, 199);
+            this.bUlozit.TabIndex = 8;
+            this.bUlozit.Text = "Uložit do souboru";
+            this.bUlozit.UseVisualStyleBackColor = true;
+            // 
             // ÜkladaniCisel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(895, 534);
+            this.ClientSize = new System.Drawing.Size(789, 534);
+            this.Controls.Add(this.bUlozit);
             this.Controls.Add(this.lUlozitDoFormatu);
             this.Controls.Add(this.bVymazatCisla);
             this.Controls.Add(this.bPridatCislo);
@@ -190,5 +202,6 @@
         private System.Windows.Forms.RadioButton rbPodSebou;
         private System.Windows.Forms.RadioButton rbOddelenoTab;
         private System.Windows.Forms.RadioButton rbOddelenoDvojteckou;
+        private System.Windows.Forms.Button bUlozit;
     }
 }

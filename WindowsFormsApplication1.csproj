@@ -13,6 +13,21 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -63,6 +78,12 @@
     </Compile>
     <Compile Include="KamenNeboNuzky.Designer.cs">
       <DependentUpon>KamenNeboNuzky.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NapisText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NapisText.Designer.cs">
+      <DependentUpon>NapisText.cs</DependentUpon>
     </Compile>
     <Compile Include="odpocitavej.cs">
       <SubType>Form</SubType>
@@ -126,6 +147,12 @@
     <Compile Include="¨Stopky.Designer.cs">
       <DependentUpon>¨Stopky.cs</DependentUpon>
     </Compile>
+    <Compile Include="ÜkladaniCisel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜkladaniCisel.Designer.cs">
+      <DependentUpon>ÜkladaniCisel.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="hadani.resx">
       <DependentUpon>hadani.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KamenNeboNuzky.resx">
       <DependentUpon>KamenNeboNuzky.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NapisText.resx">
+      <DependentUpon>NapisText.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="odpocitavej.resx">
       <DependentUpon>odpocitavej.cs</DependentUpon>
@@ -174,6 +204,9 @@
     <EmbeddedResource Include="¨Stopky.resx">
       <DependentUpon>¨Stopky.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ÜkladaniCisel.resx">
+      <DependentUpon>ÜkladaniCisel.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -183,6 +216,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
