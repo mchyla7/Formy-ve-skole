@@ -101,6 +101,67 @@ namespace ConsoleApplication1
             string text = Console.ReadLine();
             File.WriteAllText(cesta, text);
         }
-    }
 
+        public static void emaily()
+        {
+            string cesta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\CSharp-ve-skole\\Martin\\CSharp-ve-skole\\Main\\Vedlejší soubory\\Tabulka.txt";
+            string[] soubor = File.ReadAllLines(cesta);
+            string final;
+
+            foreach (string radek in soubor)
+            {
+
+            }
+        }
+
+        //metoda načte data ze souboru maily.txt, všechny mailove adresy uloží do 
+        public static void pr2var3()
+        {
+            string cesta = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string soubor;
+            try
+            { soubor = File.ReadAllText(cesta + "\\maily.txt"); }
+            catch
+            {
+                Console.Write("Soubor nebyl nalezen!!!");
+                Console.ReadLine();
+                return;//přejde do metody Main
+
+            }
+            string[] pole = soubor.Split(';');
+            string maily = "";
+            for (int i = 0; i < pole.Length; i++)
+            {
+                pole[i] = pole[i].Trim();
+                if (pole[i].Contains("@"))
+                {
+                    //Console.WriteLine(pole[i]);
+                    maily += pole[i] + ";";
+                }
+            }
+            if (maily.Length < 3)
+            {
+                Console.Write("Mailové adresy nebyly nalezeny");
+                return;
+            }
+
+            try
+            {
+                File.WriteAllText(cesta + "\\dataMail.txt", maily);
+                Console.Write("Soubor uložen!!!");
+                Console.ReadLine();
+            }
+            catch
+            {
+                Console.Write("Soubor nebyl uložen!!!");
+                Console.ReadLine();
+                return;
+
+            }
+
+
+        }
+
+
+    }
 }
