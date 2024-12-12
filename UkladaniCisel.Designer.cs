@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class ÜkladaniCisel
+    partial class UkladaniCisel
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lZadejCislo = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbCislo = new System.Windows.Forms.TextBox();
             this.lPocetCisel = new System.Windows.Forms.Label();
             this.lPocetCiselReal = new System.Windows.Forms.Label();
             this.bPridatCislo = new System.Windows.Forms.Button();
@@ -40,6 +40,7 @@
             this.rbOddelenoDvojteckou = new System.Windows.Forms.RadioButton();
             this.lUlozitDoFormatu = new System.Windows.Forms.Label();
             this.bUlozit = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.pUlozitDoFormatu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,12 +54,12 @@
             this.lZadejCislo.TabIndex = 0;
             this.lZadejCislo.Text = "Zadej číslo :";
             // 
-            // textBox1
+            // tbCislo
             // 
-            this.textBox1.Location = new System.Drawing.Point(279, 65);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.tbCislo.Location = new System.Drawing.Point(272, 82);
+            this.tbCislo.Name = "tbCislo";
+            this.tbCislo.Size = new System.Drawing.Size(100, 20);
+            this.tbCislo.TabIndex = 1;
             // 
             // lPocetCisel
             // 
@@ -89,6 +90,7 @@
             this.bPridatCislo.TabIndex = 4;
             this.bPridatCislo.Text = "Přidat číslo";
             this.bPridatCislo.UseVisualStyleBackColor = true;
+            this.bPridatCislo.Click += new System.EventHandler(this.bPridatCislo_Click);
             // 
             // bVymazatCisla
             // 
@@ -99,6 +101,7 @@
             this.bVymazatCisla.TabIndex = 5;
             this.bVymazatCisla.Text = "Vymazat zadaná čísla";
             this.bVymazatCisla.UseVisualStyleBackColor = true;
+            this.bVymazatCisla.Click += new System.EventHandler(this.bVymazatCisla_Click);
             // 
             // pUlozitDoFormatu
             // 
@@ -165,8 +168,13 @@
             this.bUlozit.TabIndex = 8;
             this.bUlozit.Text = "Uložit do souboru";
             this.bUlozit.UseVisualStyleBackColor = true;
+            this.bUlozit.Click += new System.EventHandler(this.bUlozit_Click);
             // 
-            // ÜkladaniCisel
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
+            // 
+            // UkladaniCisel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -177,22 +185,21 @@
             this.Controls.Add(this.bPridatCislo);
             this.Controls.Add(this.lPocetCiselReal);
             this.Controls.Add(this.lPocetCisel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbCislo);
             this.Controls.Add(this.lZadejCislo);
             this.Controls.Add(this.pUlozitDoFormatu);
-            this.Name = "ÜkladaniCisel";
+            this.Name = "UkladaniCisel";
             this.Text = "ÜkladaniCisel";
             this.pUlozitDoFormatu.ResumeLayout(false);
             this.pUlozitDoFormatu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
 
         private System.Windows.Forms.Label lZadejCislo;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbCislo;
         private System.Windows.Forms.Label lPocetCisel;
         private System.Windows.Forms.Label lPocetCiselReal;
         private System.Windows.Forms.Button bPridatCislo;
@@ -203,5 +210,6 @@
         private System.Windows.Forms.RadioButton rbOddelenoTab;
         private System.Windows.Forms.RadioButton rbOddelenoDvojteckou;
         private System.Windows.Forms.Button bUlozit;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }

@@ -147,11 +147,11 @@
     <Compile Include="¨Stopky.Designer.cs">
       <DependentUpon>¨Stopky.cs</DependentUpon>
     </Compile>
-    <Compile Include="ÜkladaniCisel.cs">
+    <Compile Include="UkladaniCisel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ÜkladaniCisel.Designer.cs">
-      <DependentUpon>ÜkladaniCisel.cs</DependentUpon>
+    <Compile Include="UkladaniCisel.Designer.cs">
+      <DependentUpon>UkladaniCisel.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="hadani.resx">
       <DependentUpon>hadani.cs</DependentUpon>
@@ -204,8 +204,8 @@
     <EmbeddedResource Include="¨Stopky.resx">
       <DependentUpon>¨Stopky.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ÜkladaniCisel.resx">
-      <DependentUpon>ÜkladaniCisel.cs</DependentUpon>
+    <EmbeddedResource Include="UkladaniCisel.resx">
+      <DependentUpon>UkladaniCisel.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

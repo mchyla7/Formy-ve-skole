@@ -33,3 +33,5 @@ C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplicat
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.odpocitavej.resources
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.hodiny.resources
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1._Stopky.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.NapisText.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.UkladaniCisel.resources
