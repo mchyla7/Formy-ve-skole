@@ -26,3 +26,4 @@ C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplic
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1.NapisText.resources
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1._Stopky.resources
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1.UkladaniCisel.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Release\WindowsFormsApplication1.nacitaniZeSouboru.resources

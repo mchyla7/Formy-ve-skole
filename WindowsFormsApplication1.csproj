@@ -79,6 +79,18 @@
     <Compile Include="KamenNeboNuzky.Designer.cs">
       <DependentUpon>KamenNeboNuzky.cs</DependentUpon>
     </Compile>
+    <Compile Include="kontrolaEmailu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kontrolaEmailu.Designer.cs">
+      <DependentUpon>kontrolaEmailu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nacitaniZeSouboru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nacitaniZeSouboru.Designer.cs">
+      <DependentUpon>nacitaniZeSouboru.cs</DependentUpon>
+    </Compile>
     <Compile Include="NapisText.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +182,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KamenNeboNuzky.resx">
       <DependentUpon>KamenNeboNuzky.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontrolaEmailu.resx">
+      <DependentUpon>kontrolaEmailu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nacitaniZeSouboru.resx">
+      <DependentUpon>nacitaniZeSouboru.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NapisText.resx">
       <DependentUpon>NapisText.cs</DependentUpon>
