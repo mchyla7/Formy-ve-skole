@@ -85,6 +85,12 @@
     <Compile Include="kontrolaEmailu.Designer.cs">
       <DependentUpon>kontrolaEmailu.cs</DependentUpon>
     </Compile>
+    <Compile Include="mailsss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mailsss.Designer.cs">
+      <DependentUpon>mailsss.cs</DependentUpon>
+    </Compile>
     <Compile Include="nacitaniZeSouboru.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="kontrolaEmailu.resx">
       <DependentUpon>kontrolaEmailu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mailsss.resx">
+      <DependentUpon>mailsss.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="nacitaniZeSouboru.resx">
       <DependentUpon>nacitaniZeSouboru.cs</DependentUpon>
