@@ -55,5 +55,10 @@ namespace WindowsFormsApplication1
         {
             Application.Exit();
         }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }
