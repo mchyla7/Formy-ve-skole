@@ -12,6 +12,8 @@ namespace WindowsFormsApplication1
 {
     public partial class mailsss : Form
     {
+        private List<string> serazeneZaznamy;
+
         public mailsss()
         {
             InitializeComponent();
@@ -72,12 +74,8 @@ namespace WindowsFormsApplication1
 
             MessageBox.Show("Emaily byly načteny a jsou zkontrolovány");
             richTextBox1.Text = string.Join(Environment.NewLine, funkcniEmaily);
-            
-            List<string> jmena = funkcniEmaily.Select(email => email.Split('@')[0].Split('.')[0]).ToList();
-            List<string> prijmeni = funkcniEmaily.Select(email => email.Split('@')[0].Split('.')[1]).ToList();
-            List<string> emaily = funkcniEmaily;
-            
-            List<string> serazeneZaznamy = funkcniEmaily
+
+            serazeneZaznamy = funkcniEmaily
                 .Select(email => new { Email = email, Jmeno = email.Split('@')[0].Split('.')[0], Prijmeni = email.Split('@')[0].Split('.')[1] })
                 .OrderBy(zaznam => zaznam.Prijmeni)
                 .Select(zaznam => $"{zaznam.Jmeno} {zaznam.Prijmeni} {zaznam.Email}")
@@ -99,7 +97,7 @@ namespace WindowsFormsApplication1
         private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
             string cestaUlozeni = saveFileDialog1.FileName;
-            File.WriteAllText(cestaUlozeni, serazeneZaznamy);
+            File.WriteAllText(cestaUlozeni, string.Join(Environment.NewLine, serazeneZaznamy));
             MessageBox.Show("Emaily byly uloženy do souboru " + cestaUlozeni);
         }
     }
