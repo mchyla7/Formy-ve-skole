@@ -26,7 +26,6 @@ C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplicat
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.Kalkulacka2.resources
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\Programko.hadani.resources
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.zkouseni.resources
-C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.KamenNeboNuzkyNeboPapir.resources
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.PraceSDatumem.resources
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.informaceODnesku.resources
@@ -38,3 +37,5 @@ C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplicat
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.nacitaniZeSouboru.resources
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.kontrolaEmailu.resources
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.mailsss.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.csproj.AssemblyReference.cache
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\obj\x86\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache

@@ -40,9 +40,11 @@ namespace WindowsFormsApplication1
                 return;
             }
 
-                if (data.IndexOf('@') > 1)
+            foreach (string line in data)
+            {
+                if (line.IndexOf('@') > 1)
                 {
-                    emaily = emaily + data + " ;";
+                    emaily = emaily + line + " ;";
                 }
             }
             tbText.Text = emaily;
