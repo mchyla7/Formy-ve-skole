@@ -106,7 +106,6 @@ namespace ConsoleApplication1
         {
             string cesta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\CSharp-ve-skole\\Martin\\CSharp-ve-skole\\Main\\Vedlejší soubory\\Tabulka.txt";
             string[] soubor = File.ReadAllLines(cesta);
-            string final;
 
             foreach (string radek in soubor)
             {

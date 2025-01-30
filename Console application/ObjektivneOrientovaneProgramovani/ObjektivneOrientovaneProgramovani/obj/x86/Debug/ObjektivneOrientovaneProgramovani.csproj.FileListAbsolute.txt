@@ -1,0 +1,4 @@
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\Console application\ObjektivneOrientovaneProgramovani\ObjektivneOrientovaneProgramovani\bin\Debug\ObjektivneOrientovaneProgramovani.exe
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\Console application\ObjektivneOrientovaneProgramovani\ObjektivneOrientovaneProgramovani\bin\Debug\ObjektivneOrientovaneProgramovani.pdb
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\Console application\ObjektivneOrientovaneProgramovani\ObjektivneOrientovaneProgramovani\obj\x86\Debug\ObjektivneOrientovaneProgramovani.exe
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\Console application\ObjektivneOrientovaneProgramovani\ObjektivneOrientovaneProgramovani\obj\x86\Debug\ObjektivneOrientovaneProgramovani.pdb

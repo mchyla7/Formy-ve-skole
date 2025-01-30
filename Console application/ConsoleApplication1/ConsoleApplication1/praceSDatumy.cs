@@ -18,26 +18,6 @@ namespace ConsoleApplication1
             int minuta = nyni.Minute;
             int sekudna = nyni.Second;
 
-            label1.Text = ("Den je " + den);
-
-            label2.Text = ("Měsíc je " + mesic);
-            label3.Text = ("Rok je " + rok);
-            label4.Text = ("Hodina je " + hodina);
-            label5.Text = ("Minuta je " + minuta);
-            label6.Text = ("Sekund je " + sekudna);
-
-            // Zítřejší a dnešní den
-
-            DateTime dnes = DateTime.Now;
-
-            label7.Text = ("Dnes je " + dnes.ToShortDateString() + ".");
-            label8.Text = ("Dnes je " + dnes.ToLongDateString() + ".");
-
-            DateTime zitra = dnes.AddDays(1);
-
-            label9.Text = ("Dnes je " + dnes.ToShortDateString() + ".");
-            label10.Text = ("Zítra bude " + zitra.ToShortDateString() + ".");
-
         }
 
         public static void konkretniDen()
@@ -60,12 +40,11 @@ namespace ConsoleApplication1
 
             DateTime datumm = DateTime.Today;
 
-            if (zakazka < dnes)
-            {
-                Console.WriteLine("Termín je zadaný v minulosti");
-            }
-            else
-                break;
+            //if (zakazka < dnes)
+            //{
+            //    Console.WriteLine("Termín je zadaný v minulosti");
+            //}
+
 
 
         }
