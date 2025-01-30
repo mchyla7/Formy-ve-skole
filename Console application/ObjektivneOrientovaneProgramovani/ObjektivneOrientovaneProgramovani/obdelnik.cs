@@ -45,7 +45,7 @@ namespace ObjektivneOrientovaneProgramovani
 
         public void vypis() // void - void nic nevrácí
         {
-            Console.WriteLine("Obvod je {0} a obsah je {1}. Použité jednotky jsou {3}", this.obvod, this.obsah, this.jednotka);
+            Console.WriteLine("Obvod je {0} a obsah je {1}. Použité jednotky jsou {2}", obvod(), obsah(), this.jednotka);
         }
 
     }
