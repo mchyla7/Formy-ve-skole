@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{256A879B-A4AB-472C-8692-0D5EAD642351}</ProjectGuid>
+    <ProjectGuid>{AE2AD84F-5A6A-4A73-BE09-20A10E16DF22}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ObjektivneOrientovaneProgramovani</RootNamespace>
-    <AssemblyName>ObjektivneOrientovaneProgramovani</AssemblyName>
+    <RootNamespace>ZkouseniOOP</RootNamespace>
+    <AssemblyName>ZkouseniOOP</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -43,12 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="hadani.cs" />
-    <Compile Include="obdelnik.cs" />
-    <Compile Include="pracovnik.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="trojuhelnik.cs" />
+    <Compile Include="zkouseni.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

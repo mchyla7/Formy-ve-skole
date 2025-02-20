@@ -8,7 +8,7 @@ namespace ObjektivneOrientovaneProgramovani
     // Vytvořte třídu pracovník
     // Atributy: jmeno, prijmeni, datum-narozeni, datum-nastupu
 
-    class pracovnik
+    partial class pracovnik
     {
         string jmeno;
         string prijmeni;
