@@ -1,0 +1,8 @@
+C:\Users\martin.chyla2\AppData\Local\Temporary Projects\oopPracovnici\bin\Debug\oopPracovnici.exe
+C:\Users\martin.chyla2\AppData\Local\Temporary Projects\oopPracovnici\bin\Debug\oopPracovnici.pdb
+C:\Users\martin.chyla2\AppData\Local\Temporary Projects\oopPracovnici\obj\x86\Debug\oopPracovnici.Form1.resources
+C:\Users\martin.chyla2\AppData\Local\Temporary Projects\oopPracovnici\obj\x86\Debug\oopPracovnici.Form2.resources
+C:\Users\martin.chyla2\AppData\Local\Temporary Projects\oopPracovnici\obj\x86\Debug\oopPracovnici.Properties.Resources.resources
+C:\Users\martin.chyla2\AppData\Local\Temporary Projects\oopPracovnici\obj\x86\Debug\oopPracovnici.csproj.GenerateResource.Cache
+C:\Users\martin.chyla2\AppData\Local\Temporary Projects\oopPracovnici\obj\x86\Debug\oopPracovnici.exe
+C:\Users\martin.chyla2\AppData\Local\Temporary Projects\oopPracovnici\obj\x86\Debug\oopPracovnici.pdb
