@@ -1,0 +1,9 @@
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\Console application\ObjektivneOrientovaneProgramovani\ObjektivneOrientovaneProgramovani\ooformular\ooformular\bin\Debug\ooformular.exe
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\Console application\ObjektivneOrientovaneProgramovani\ObjektivneOrientovaneProgramovani\ooformular\ooformular\bin\Debug\ooformular.pdb
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\Console application\ObjektivneOrientovaneProgramovani\ObjektivneOrientovaneProgramovani\ooformular\ooformular\obj\x86\Debug\ooformular.Form1.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\Console application\ObjektivneOrientovaneProgramovani\ObjektivneOrientovaneProgramovani\ooformular\ooformular\obj\x86\Debug\ooformular.Form2.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\Console application\ObjektivneOrientovaneProgramovani\ObjektivneOrientovaneProgramovani\ooformular\ooformular\obj\x86\Debug\ooformular.Properties.Resources.resources
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\Console application\ObjektivneOrientovaneProgramovani\ObjektivneOrientovaneProgramovani\ooformular\ooformular\obj\x86\Debug\ooformular.csproj.GenerateResource.Cache
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\Console application\ObjektivneOrientovaneProgramovani\ObjektivneOrientovaneProgramovani\ooformular\ooformular\obj\x86\Debug\ooformular.exe
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\Console application\ObjektivneOrientovaneProgramovani\ObjektivneOrientovaneProgramovani\ooformular\ooformular\obj\x86\Debug\ooformular.pdb
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\Console application\ObjektivneOrientovaneProgramovani\ObjektivneOrientovaneProgramovani\ooformular\ooformular\obj\x86\Debug\ooformular.csprojResolveAssemblyReference.cache

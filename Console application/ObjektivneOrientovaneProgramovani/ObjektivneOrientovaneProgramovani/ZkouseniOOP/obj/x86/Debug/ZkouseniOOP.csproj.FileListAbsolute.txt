@@ -2,3 +2,4 @@ C:\Users\martin.chyla2\Desktop\Formy-ve-skole\Console application\ObjektivneOrie
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\Console application\ObjektivneOrientovaneProgramovani\ObjektivneOrientovaneProgramovani\ZkouseniOOP\bin\Debug\ZkouseniOOP.pdb
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\Console application\ObjektivneOrientovaneProgramovani\ObjektivneOrientovaneProgramovani\ZkouseniOOP\obj\x86\Debug\ZkouseniOOP.exe
 C:\Users\martin.chyla2\Desktop\Formy-ve-skole\Console application\ObjektivneOrientovaneProgramovani\ObjektivneOrientovaneProgramovani\ZkouseniOOP\obj\x86\Debug\ZkouseniOOP.pdb
+C:\Users\martin.chyla2\Desktop\Formy-ve-skole\Console application\ObjektivneOrientovaneProgramovani\ObjektivneOrientovaneProgramovani\ZkouseniOOP\obj\x86\Debug\ZkouseniOOP.csprojResolveAssemblyReference.cache
